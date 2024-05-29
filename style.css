@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 90vw;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-image: url(pokeball.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  display: none;
+  text-align: center;
+}
+
+.item {
+  width: 24%;
+  margin: 0px;
+  padding: 20px;
+  flex-grow: 1;
+  transform: 0.5s ease;
+  border: 1px solid #000;
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#poke1 {
+  display: none;
+  transform: 0.5s ease;
+}
+
+.item p {
+  margin-top: 5px;
+}
+
+.item span {
+  display: none;
+  margin-left: 10px;
+  position: relative;
+}
+
+#item1 {
+  background-color: yellow;
+}
+
+#item2 {
+  background-color: rgb(230, 230, 50);
+}
+
+#item3 {
+  background-color: rgb(221, 194, 73);
+}
+
+#item4 {
+  background-color: rgb(221, 107, 221);
+}
+
+#item5 {
+  background-color: rgb(177, 164, 54);
+}
+
+#item6 {
+  background-color: rgb(105, 131, 202);
+}
+
+#item7 {
+  background-color: rgb(196, 196, 141);
+}
+
+#item8 {
+  background-color: rgb(67, 224, 127);
+}
+
+#item9 {
+  background-color: aqua;
+}
+
+#item10 {
+  background-color: blanchedalmond;
+}
+
+#item11 {
+  background-color: rgb(235, 206, 235);
+}
+
+#item12 {
+  background-color: rgb(161, 161, 131);
+}
+
+@media (max-width: 700px) {
+  .item {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    transform: 0.5s ease;
+  }
+
+  .item img {
+    max-width: 60px;
+  }
+
+  h1 {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    padding-top: 13px;
+  }
+
+  #poke1 {
+    display: inline-block;
+    transform: 0.5s ease;
+  }
+
+  .item:hover {
+    background-image: url(hover.png);
+    background-size: cover;
+  }
+
+  .type {
+    display: none;
+    border: 1px solid #fff
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  .item img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .item span {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .poke {
+    display: none;
+  }
+
+  #poke1 {
+    display: none;
+    transform: 0.5s ease;
+  }
+
+  .item:hover {
+    background-image: url(hover2.png);
+    background-size: cover;
+  }
+
+  .type {
+    display: none;
+    font-size: 18px; 
+    border: 1px solid #fff; 
+  }
+  
+  .type.psychic {
+    background-color: #f85888; 
+  }
+  
+  .type.electric {
+    background-color: #f8d030; 
+  }
+  
+  .type.normal {
+    background-color: #a8a878; 
+  }
+  
+  .type.grass {
+    background-color: #78c850; 
+  }
+  
+  .type.water {
+    background-color: #6890f0; 
+  }
+  
+  .type.fighting {
+    background-color: #c03028; 
+  }
+  
+  .type.fire {
+    background-color: #f08030; 
+  }
+  
+  .type.flying {
+    background-color: #a890f0; 
+  }
+  
+  .type.bug {
+    background-color: #a8b820; 
+  }
+  
+  .type.rock {
+    background-color: #b8a038; 
+  }
+  
+  .type.ground {
+    background-color: #e0c068; 
+  }
+  
+  .type.ghost {
+    background-color: #705898; 
+  }
+  
+  .type.poison {
+    background-color: #a040a0; 
+  }
+  
+  .type.ice {
+    background-color: #98d8d8; 
+  }
+  
+  .type.dragon {
+    background-color: #7038f8; 
+  }
+  
+  .type.steel {
+    background-color: #b8b8d0; 
+  }
+  
+  .type.dark {
+    background-color: #705848; 
+  }
+  
+  @media (max-width: 500px) {
+    .type {
+      display: inline; 
+      bottom: -5px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 20px; 
+    }
+  }
+}
+
+.type {
+  display: none;
+}
