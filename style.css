@@ -175,8 +175,10 @@ h1 {
 
   .type {
     display: none;
-    font-size: 18px; 
+    font-size: 20px; 
     border: 1px solid #fff; 
+    color: white;
+    text-shadow: 1px 1px 2px #000;
   }
   
   .type.psychic {
@@ -246,18 +248,8 @@ h1 {
   .type.dark {
     background-color: #705848; 
   }
-  
-  @media (max-width: 500px) {
-    .type {
-      display: inline; 
-      bottom: -5px;
-      border-radius: 10px;
-      color: #fff;
-      font-size: 20px; 
-    }
-  }
-}
 
 .type {
   display: none;
+}
 }
